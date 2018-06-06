@@ -2,7 +2,7 @@ defmodule Basichat.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", Basichat.RoomChannel
+  channel "rooms:*", Basichat.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
